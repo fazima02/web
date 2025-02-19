@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objek Wisata</title>
+    <link rel="icon" href="logo-Photoroom.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+            margin-top: 20px;
+            width: 100%; /* Lebar penuh */
+            height: 100px; /* Tinggi kotak */
+            background-color: green; /* Warna latar hijau */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            background: linear-gradient(90deg, #228B22, #006400);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        nav a img {
+            width: 20px;
+            height: 20px;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .destinasi {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 350px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .destinasi:hover {
+            transform: scale(1.05);
+        }
+        .destinasi a {
+            display: block;
+            text-decoration: none;
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        img:hover {
+            opacity: 0.8;
+        }
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 color="green">Selamat Datang di Website Objek Wisata</h1>
+
+    <!-- <nav>
+        <a href="home.html">
+            <img src="home-removebg-preview.png" alt="Home"><u>Laman Utama</u>
+        </a>
+        <a href="indeks.html">Pantai</a>
+        <a href="gunung.html">Pegunungan</a>
+        <a href="kota_sejarah.html">Kota Bersejarah</a>
+    </nav> -->
+
+    <div class="container">
+        <div class="destinasi">
+            <h2>Pantai</h2>
+            <a href="indeks.html">
+                <img src="pantai.jpeg" alt="Pantai">
+            </a>
+            <p>Hamparan pasir putih, deburan ombak yang menenangkan, serta matahari terbenam yang memukau.</p>
+        </div>
+
+        <div class="destinasi">
+            <h2>Pegunungan</h2>
+            <a href="gunung.html">
+                <img src="gunung.jpeg" alt="Pegunungan">
+            </a>
+            <p>Udara segar, pemandangan hijau yang menenangkan, serta keindahan alam yang memanjakan mata.</p>
+        </div>
+
+        <div class="destinasi">
+            <h2>Kota Sejarah</h2>
+            <a href="kota_sejarah.html">
+                <img src="kota.jpeg" alt="Kota">
+            </a>
+            <p>Bangunan kuno yang megah, jalanan penuh cerita, dan budaya yang kental.</p>
+        </div>
+    </div>
+</body>
+</html>

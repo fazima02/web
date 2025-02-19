@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objek Wisata</title>
+    <link rel="icon" href="logo-Photoroom.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: green;
+            margin-top: 20px;
+        }
+        nav {
+            background: linear-gradient(90deg, #228B22, #006400);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        nav a img {
+            width: 20px;
+            height: 20px;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .destinasi {
+            margin: 20px auto;
+            width: 80%;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        .button {
+            display: inline-block;
+            background: green;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .button:hover {
+            background: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Menjelajahi Ketinggian: Keindahan Pegunungan yang Abadi</h1>
+
+    <nav>
+        <a href="home.html">
+            <img src="home-removebg-preview.png" alt="Home"> Laman Utama
+        </a>
+        <!-- <a href="indeks.html">Pantai</a>
+        <a href="gunung.html"><u>Pegunungan</u></a>
+        <a href="kota_sejarah.html">Kota Bersejarah</a> -->
+    </nav>
+
+    <div class="destinasi">
+        <h2>Gunung Bromo</h2>
+        <img src="gunung 1.jpeg" alt="Pantai Raja Ampat">
+        <p>Gunung berapi dengan kawah aktif dan lautan pasir luas yang menciptakan pemandangan dramatis. Keindahannya yang eksotis menjadikannya destinasi favorit para petualang.</p>
+        <a href="#" class="button">Lihat Detail</a>
+    </div>
+
+    <div class="destinasi">
+        <h2>Gunung Padang Rumput</h2>
+        <img src="gunung 2.jpeg" alt="Pantai Kuta">
+        <p>Hamparan padang rumput hijau yang membentang luas di kaki gunung menciptakan lanskap yang asri dan menyejukkan. Tempat sempurna untuk merasakan ketenangan alam.</p>
+        <a href="#" class="button">Lihat Detail</a>
+    </div>
+
+    <div class="destinasi">
+        <h2>Gunung Glester</h2>
+        <img src="gunung 3.jpeg" alt="Pantai Mandeh">
+        <p>Gunung megah dengan puncak bersalju yang berkilau di bawah sinar matahari, menghadirkan panorama yang memukau. Keindahan alam yang menawan di ketinggian.</p>
+        <a href="#" class="button">Lihat Detail</a>
+    </div>
+
+</body>
+</html>
